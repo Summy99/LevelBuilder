@@ -1,0 +1,279 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Mode",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0=build;1=play",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 508712453571079
+		},
+		{
+			"eventType": "variable",
+			"name": "SelectedBlock",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0=none;1=basic platform",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 420274153399075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 727908749306402
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "basicPlatformCursor",
+					"sid": 710681097360678,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 856755880311154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 870183961283130,
+					"parameters": {
+						"object": "deathbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 820598524705191
+				}
+			],
+			"sid": 819001504920265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 458990846319258,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 701187300771769,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 798980580495298
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 252377822149914,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 321001732672107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 575589602493605,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 171046767809587
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 434456037438501,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 324125258509067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 394704659538486,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 245403886611754
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 484599405173361,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 178174618120668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 559428370923757,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 408251957417829,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 858399916054924
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 853217285395284,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 685235127162428,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 633475780337951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 858574704677824,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 734335256763417,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 700833166134251,
+							"parameters": {
+								"variable": "Mode",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 273263584939995,
+							"parameters": {
+								"variable": "SelectedBlock",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 615041427276665,
+							"parameters": {
+								"object-to-create": "basicPlatform",
+								"layer": "\"main\"",
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						}
+					],
+					"sid": 654180058717232
+				}
+			]
+		}
+	],
+	"sid": 985267035999880
+}

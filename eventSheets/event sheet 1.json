@@ -273,6 +273,33 @@
 					"sid": 654180058717232
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 912325073815903,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 139712538413229,
+					"parameters": {
+						"audio-file": "Jump-SoundBible.com-1007297584",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 391478411038142
 		}
 	],
 	"sid": 985267035999880

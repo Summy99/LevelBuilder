@@ -22,6 +22,16 @@
 			"sid": 420274153399075
 		},
 		{
+			"eventType": "variable",
+			"name": "BasicPlatforms",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 460714418150082
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -38,6 +48,14 @@
 					"parameters": {
 						"x": "Mouse.X",
 						"y": "Mouse.Y"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "basicPlatformCount",
+					"sid": 365176642493903,
+					"parameters": {
+						"text": "\"x\"&BasicPlatforms"
 					}
 				}
 			],
@@ -60,6 +78,11 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 820598524705191
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 553441413287301
 				}
 			],
 			"sid": 819001504920265
@@ -255,6 +278,16 @@
 								"comparison": 0,
 								"value": "1"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 441851083944118,
+							"parameters": {
+								"variable": "BasicPlatforms",
+								"comparison": 4,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
@@ -267,6 +300,15 @@
 								"layer": "\"main\"",
 								"x": "Mouse.X",
 								"y": "Mouse.Y"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 971533207800899,
+							"parameters": {
+								"variable": "BasicPlatforms",
+								"value": "1"
 							}
 						}
 					],
@@ -300,6 +342,30 @@
 				}
 			],
 			"sid": 391478411038142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 862829062767813,
+					"parameters": {
+						"object": "Ends"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "player",
+					"sid": 406805516397115,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 272213810955089
 		}
 	],
 	"sid": 985267035999880

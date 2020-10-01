@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -74,7 +82,9 @@
 			"basicPlatformCursor",
 			"Keyboard",
 			"Audio",
-			"holders"
+			"holders",
+			"basicPlatformUI",
+			"basicPlatformCount"
 		],
 		"subfolders": []
 	},

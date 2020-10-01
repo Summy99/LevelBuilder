@@ -1,19 +1,14 @@
 {
-	"name": "player",
+	"name": "holders",
 	"plugin-id": "Sprite",
-	"sid": 191793391267282,
+	"sid": 183734423754633,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 623966259562686
-		},
-		{
 			"behaviorId": "Physics",
 			"name": "Physics",
-			"sid": 639874760305285
+			"sid": 875014258666663
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4713661,
+						"imageSpriteId": 2681800,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 822979734410194,
+				"sid": 979976671481095,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

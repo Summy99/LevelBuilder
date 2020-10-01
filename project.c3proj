@@ -48,6 +48,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -65,7 +73,8 @@
 			"deathbox",
 			"basicPlatformCursor",
 			"Keyboard",
-			"Audio"
+			"Audio",
+			"holders"
 		],
 		"subfolders": []
 	},

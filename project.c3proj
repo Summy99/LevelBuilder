@@ -84,7 +84,8 @@
 			"Audio",
 			"holders",
 			"basicPlatformUI",
-			"basicPlatformCount"
+			"basicPlatformCount",
+			"circlePlatform"
 		],
 		"subfolders": []
 	},

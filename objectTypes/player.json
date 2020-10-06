@@ -14,11 +14,6 @@
 			"behaviorId": "Physics",
 			"name": "Physics",
 			"sid": 639874760305285
-		},
-		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 532471174026646
 		}
 	],
 	"effectTypes": [],
@@ -27,46 +22,20 @@
 			{
 				"frames": [
 					{
-						"width": 547,
-						"height": 537,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Booger-#1.png",
+						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7358758,
-						"collisionPoly": {
-							"points": [
-								0.3474634369287036,
-								0.2609404096834266,
-								0.5641281992687406,
-								0.28503258845437607,
-								0.6163162705667284,
-								0.40945065176908674,
-								0.8047303473491783,
-								0.5303770949720682,
-								0.8075868372943329,
-								0.6326815642458126,
-								0.6920703839122481,
-								0.7117667597765399,
-								0.5924360146252278,
-								0.8237895716946013,
-								0.4005941499085925,
-								0.8137802607076349,
-								0.34860603290676423,
-								0.765945065176909,
-								0.2154936014625229,
-								0.7588454376163877,
-								0.14899451553930534,
-								0.5570297951582894
-							]
-						},
+						"imageSpriteId": 4713661,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 822979734410194,
-				"name": "normal",
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

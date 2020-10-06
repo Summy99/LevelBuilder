@@ -220,8 +220,8 @@
 						}
 					},
 					"world": {
-						"x": -252,
-						"y": 252,
+						"x": -262,
+						"y": 197,
 						"width": 176.94362816851424,
 						"height": 60.063433415000254,
 						"originX": 0.5,
@@ -381,10 +381,10 @@
 						}
 					},
 					"world": {
-						"x": 576,
-						"y": 511,
+						"x": 615,
+						"y": 527,
 						"width": 16,
-						"height": 299,
+						"height": 266,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -425,7 +425,7 @@
 						}
 					},
 					"world": {
-						"x": 923,
+						"x": 873,
 						"y": 574,
 						"width": 13,
 						"height": 320,
@@ -469,7 +469,7 @@
 						}
 					},
 					"world": {
-						"x": 1024,
+						"x": 974,
 						"y": 610,
 						"width": 13,
 						"height": 320,
@@ -581,10 +581,10 @@
 						}
 					},
 					"world": {
-						"x": 426,
-						"y": 479,
+						"x": 449.5,
+						"y": 529,
 						"width": 16,
-						"height": 299,
+						"height": 334,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -620,6 +620,42 @@
 						"y": 284.9902447656157,
 						"width": 46.40040467951419,
 						"height": 46.40040467951418,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Ends",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 764,
+						"y": 104,
+						"width": 279.82,
+						"height": 480.14400000000006,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -766,8 +802,8 @@
 						}
 					},
 					"world": {
-						"x": 427,
-						"y": 328.08940646130736,
+						"x": 416,
+						"y": -79,
 						"width": 164.828484361349,
 						"height": 165.1303680323405,
 						"originX": 0.5,

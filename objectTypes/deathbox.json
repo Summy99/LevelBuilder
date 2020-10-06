@@ -4,19 +4,8 @@
 	"sid": 609104763059009,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 155977959439947
-		}
-	],
-	"effectTypes": [
-		{
-			"effectId": "water",
-			"name": "Water"
-		}
-	],
+	"behaviorTypes": [],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{

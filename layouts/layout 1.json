@@ -64,6 +64,50 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "deathbox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Water": {
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 647.5,
+						"y": 517,
+						"width": 1397,
+						"height": 95,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Ends",
 					"properties": {
 						"initially-visible": true,
@@ -173,35 +217,6 @@
 						"y": 252,
 						"width": 176.94362816851424,
 						"height": 60.06343341500026,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "deathbox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 642,
-						"y": 590.5,
-						"width": 1820,
-						"height": 95,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -699,8 +714,8 @@
 						}
 					},
 					"world": {
-						"x": 441,
-						"y": 392,
+						"x": 427,
+						"y": 277,
 						"width": 164.828484361349,
 						"height": 165.1303680323405,
 						"originX": 0.5,

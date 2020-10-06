@@ -1,14 +1,14 @@
 {
 	"name": "face",
 	"plugin-id": "Sprite",
-	"sid": 929173146789530,
+	"sid": 789120020431889,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",
 			"name": "Pin",
-			"sid": 331583129199231
+			"sid": 820211225457433
 		}
 	],
 	"effectTypes": [],
@@ -17,167 +17,20 @@
 			{
 				"frames": [
 					{
-						"width": 300,
+						"width": 250,
 						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Default-Eyes.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5699090,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Default-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 2886041,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Default-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 5084706,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Default-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 304353,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Default-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 6426849,
+						"imageSpriteId": 5363652,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 344426129934850,
-				"name": "Default",
-				"isLooping": true,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Happy-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 5826102,
-						"collisionPoly": {
-							"points": [
-								0.505,
-								0.618,
-								0.5,
-								0.638,
-								0.7383333333333333,
-								0.674,
-								0.5,
-								0.674,
-								0.2916666666666667,
-								0.634
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					}
-				],
-				"sid": 868021179175656,
-				"name": "Happy",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Dead-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 7809264,
-						"collisionPoly": {
-							"points": [
-								0.5483333333333333,
-								0.6140000000000001,
-								0.5816666666666667,
-								0.454,
-								0.7083333333333335,
-								0.5,
-								0.685,
-								0.666,
-								0.31833333333333336,
-								0.658,
-								0.175,
-								0.5
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					}
-				],
-				"sid": 395961979830880,
-				"name": "Dead",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 300,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Blink-Eyes.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 9918568,
-						"useCollisionPoly": true,
-						"duration": 1
-					}
-				],
-				"sid": 278772205402094,
-				"name": "blink",
+				"sid": 778502253100216,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

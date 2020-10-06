@@ -35,6 +35,34 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 210662351456671
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "face",
+					"sid": 793470846368225,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "player",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 978257341376132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 727908749306402
@@ -468,6 +496,70 @@
 				}
 			],
 			"sid": 501355600540644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 794655341115692,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 673650026683269,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 429042245740388,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 699017558219533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 822631139565766,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 731122234168265,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 305437808677858,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 956030546010643
 		}
 	],
 	"sid": 985267035999880

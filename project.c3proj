@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "water",
 			"name": "Water",
@@ -102,7 +110,8 @@
 			"basicPlatformUI",
 			"basicPlatformCount",
 			"circlePlatform",
-			"BG"
+			"BG",
+			"face"
 		],
 		"subfolders": []
 	},

@@ -11,14 +11,26 @@
 			{
 				"frames": [
 					{
-						"width": 100,
-						"height": 15,
+						"width": 1090,
+						"height": 370,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Platform.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6532987,
+						"imageSpriteId": 7134294,
+						"collisionPoly": {
+							"points": [
+								0.9298165137614678,
+								0.2168918918918919,
+								0.9300458715596329,
+								0.533783783783784,
+								0.09678899082568809,
+								0.5236486486486488,
+								0.08600917431192662,
+								0.2574324324324324
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

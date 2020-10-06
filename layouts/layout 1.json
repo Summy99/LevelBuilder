@@ -4,7 +4,37 @@
 		{
 			"name": "Layer 0",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 639.9807971468165,
+						"y": 477.73559786011236,
+						"width": 1301.8706653409968,
+						"height": 976.4029990057476,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 775148299346545,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -34,6 +64,57 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "deathbox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"effects": {
+						"Water": {
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 649.7565740045079,
+						"y": 507.85537190082596,
+						"width": 1280,
+						"height": 95,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Ends",
 					"properties": {
 						"initially-visible": true,
@@ -53,10 +134,10 @@
 						}
 					},
 					"world": {
-						"x": 0,
-						"y": 446,
-						"width": 85,
-						"height": 253,
+						"x": -15,
+						"y": 450,
+						"width": 279.82,
+						"height": 492.144,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -90,9 +171,9 @@
 					},
 					"world": {
 						"x": 1280,
-						"y": 483,
-						"width": 85,
-						"height": 31,
+						"y": 508,
+						"width": 279.82,
+						"height": 337.488,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -139,39 +220,10 @@
 						}
 					},
 					"world": {
-						"x": -394,
-						"y": 358,
-						"width": 150,
-						"height": 15,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "deathbox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 642,
-						"y": 590.5,
-						"width": 1820,
-						"height": 95,
+						"x": 216,
+						"y": 354,
+						"width": 183.89254769441732,
+						"height": 68.53233270360954,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -197,10 +249,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 40,
-						"y": -59,
-						"width": 150,
-						"height": 15,
+						"x": 98,
+						"y": -61,
+						"width": 183.892548,
+						"height": 68.532333,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -437,7 +489,7 @@
 					"type": "player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "normal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -472,13 +524,21 @@
 								"bullet": false,
 								"enabled": false
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"world": {
-						"x": 19.60285273504259,
-						"y": 303.5762910577564,
-						"width": 31.74901573277509,
-						"height": 31.74901573277509,
+						"x": 59,
+						"y": 297,
+						"width": 69.46684642331189,
+						"height": 68.19688579400089,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -487,7 +547,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 2.8312532937651635,
 						"zElevation": 0
 					}
 				},
@@ -534,6 +594,41 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "face",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 58.77603845153499,
+						"y": 290.95700042921544,
+						"width": 42.435295333928835,
+						"height": 35.36274611160737,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 635480375020494,
@@ -577,10 +672,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 100,
-						"y": 27,
-						"width": 150,
-						"height": 15,
+						"x": 101,
+						"y": 34,
+						"width": 183.892548,
+						"height": 68.532333,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -604,9 +699,9 @@
 						"bold": false,
 						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0,
+							0,
+							0,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -669,10 +764,20 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
+						"x": 441,
+						"y": 363,
+						"width": 165.45908255205686,
+						"height": 165.76212116478956,
+=======
 						"x": 426,
 						"y": 372,
-						"width": 104.83772863327586,
-						"height": 104.83772863327586,
+						"width": 104.83772863327587,
+						"height": 104.83772863327587,
+<<<<<<< Updated upstream
+=======
+>>>>>>> eb05f52454b8f6a6ab35da1efcdf5592d8f546ed
+>>>>>>> Stashed changes
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

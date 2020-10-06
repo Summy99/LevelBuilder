@@ -17,14 +17,26 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 823,
+						"height": 1262,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Block-Platform.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6835581,
+						"imageSpriteId": 1389929,
+						"collisionPoly": {
+							"points": [
+								0.2247873633049817,
+								0.26743264659271,
+								0.8687727825030386,
+								0.24524564183835185,
+								0.896719319562576,
+								0.7496038034865324,
+								0.19562575941676782,
+								0.7369255150554679
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

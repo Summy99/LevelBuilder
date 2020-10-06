@@ -55,6 +55,11 @@
 						"height-type": "no",
 						"z": false
 					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "face",
+					"sid": 550605778161271
 				}
 			],
 			"sid": 978257341376132
@@ -127,6 +132,15 @@
 					"parameters": {
 						"instance-variable": "dead",
 						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 310122544505641,
+					"parameters": {
+						"animation": "\"dead\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -421,6 +435,16 @@
 					"parameters": {
 						"key": 32
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 659878975895127,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -459,6 +483,14 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "face",
+					"sid": 636725908842171,
+					"parameters": {
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 106930179895288
@@ -493,6 +525,15 @@
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 576102249152345,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 501355600540644
@@ -507,6 +548,15 @@
 					"parameters": {
 						"key": 37
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 458477114004463,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -539,6 +589,15 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 854778655913065,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -560,6 +619,29 @@
 				}
 			],
 			"sid": 956030546010643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "player",
+					"sid": 993465990683722,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 452252768379136,
+					"parameters": {
+						"animation": "\"happy\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 817201470686939
 		}
 	],
 	"sid": 985267035999880

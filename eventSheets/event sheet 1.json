@@ -320,12 +320,10 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 912325073815903,
-					"parameters": {
-						"key": 38
-					}
+					"id": "on-jump",
+					"objectClass": "player",
+					"sid": 244350736842611,
+					"behaviorType": "Platform"
 				},
 				{
 					"id": "compare-eventvar",
@@ -428,6 +426,31 @@
 				}
 			],
 			"sid": 106930179895288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "player",
+					"sid": 669375641634087,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 411847417681959,
+					"parameters": {
+						"audio-file": "zapsplat_foley_rock_small_hard_impact_on_soil_thud_002_408502",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 501355600540644
 		}
 	],
 	"sid": 985267035999880

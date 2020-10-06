@@ -57,6 +57,15 @@
 					"parameters": {
 						"text": "\"x\"&BasicPlatforms"
 					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "player",
+					"sid": 695297058310047,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"speed": "(player.Platform.VectorX*1.5)"
+					}
 				}
 			],
 			"sid": 856755880311154
@@ -75,14 +84,35 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 820598524705191
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 284079832768263,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
 				},
 				{
-					"id": "reset-global-variables",
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 949427249943386,
+					"parameters": {
+						"animation": "\"dead\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
 					"objectClass": "System",
-					"sid": 553441413287301
+					"sid": 408840987925880,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 469230063915918
 				}
 			],
 			"sid": 819001504920265
@@ -365,11 +395,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-angle",
+					"id": "set-speed",
 					"objectClass": "player",
-					"sid": 406805516397115,
+					"sid": 871939853424503,
+					"behaviorType": "Rotate",
 					"parameters": {
-						"angle": "0"
+						"speed": "0"
 					}
 				}
 			],
@@ -384,6 +415,16 @@
 					"sid": 723607547277331,
 					"parameters": {
 						"key": 32
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 626815522045370,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "0"
 					}
 				}
 			],
@@ -423,6 +464,14 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "face",
+					"sid": 476555294076138,
+					"parameters": {
+						"from": "current-frame"
+					}
 				}
 			],
 			"sid": 106930179895288
@@ -431,14 +480,161 @@
 			"eventType": "block",
 			"conditions": [
 				{
+<<<<<<< Updated upstream
 					"id": "on-landed",
 					"objectClass": "player",
 					"sid": 669375641634087,
+=======
+<<<<<<< HEAD
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 684706063620510
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "face",
+					"sid": 356231403990792,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "player",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "face",
+					"sid": 160252045397189
+				}
+			],
+			"sid": 877403212405558
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 624107509407969,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 732655098225185,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 340700387506952,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 208392829888437
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 624967927675563,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 371013942007631,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 999485232282383,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 610618902689098
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "player",
+					"sid": 474646760731397,
 					"behaviorType": "Platform"
 				}
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 408294592131007,
+					"parameters": {
+						"animation": "\"Happy\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 954898335318840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "player",
+					"sid": 801312277262660,
+=======
+					"id": "on-landed",
+					"objectClass": "player",
+					"sid": 669375641634087,
+>>>>>>> eb05f52454b8f6a6ab35da1efcdf5592d8f546ed
+>>>>>>> Stashed changes
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 182600568298076,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 172506107212070
+=======
+>>>>>>> Stashed changes
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 411847417681959,
@@ -451,6 +647,10 @@
 				}
 			],
 			"sid": 501355600540644
+<<<<<<< Updated upstream
+=======
+>>>>>>> eb05f52454b8f6a6ab35da1efcdf5592d8f546ed
+>>>>>>> Stashed changes
 		}
 	],
 	"sid": 985267035999880

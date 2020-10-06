@@ -64,9 +64,33 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
 			"version": "r218",
 			"bundled": false
 		}
@@ -85,7 +109,9 @@
 			"holders",
 			"basicPlatformUI",
 			"basicPlatformCount",
-			"circlePlatform"
+			"circlePlatform",
+			"background",
+			"face"
 		],
 		"subfolders": []
 	},

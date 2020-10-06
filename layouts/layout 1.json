@@ -74,7 +74,14 @@
 					},
 					"uid": 7,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"effects": {
 						"Water": {
 							"parameters": {
@@ -130,7 +137,7 @@
 						"x": 0,
 						"y": 442,
 						"width": 279.82,
-						"height": 480.144,
+						"height": 480.14400000000006,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -216,7 +223,7 @@
 						"x": -252,
 						"y": 252,
 						"width": 176.94362816851424,
-						"height": 60.06343341500026,
+						"height": 60.063433415000254,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -245,7 +252,7 @@
 						"x": 97,
 						"y": -55,
 						"width": 176.943628,
-						"height": 60.063433,
+						"height": 60.06343300000001,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -488,7 +495,9 @@
 						"live-preview": false
 					},
 					"uid": 2,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
@@ -517,13 +526,21 @@
 								"bullet": false,
 								"enabled": false
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"world": {
 						"x": 47,
-						"y": 304,
-						"width": 31.74901573277509,
-						"height": 31.74901573277509,
+						"y": 286,
+						"width": 69.46684642331189,
+						"height": 68.19688579400089,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -625,7 +642,7 @@
 						"x": 98,
 						"y": 35,
 						"width": 176.943628,
-						"height": 60.063433,
+						"height": 60.06343300000001,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

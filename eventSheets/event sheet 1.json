@@ -57,6 +57,15 @@
 					"parameters": {
 						"text": "\"x\"&BasicPlatforms"
 					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "player",
+					"sid": 717444795285426,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"speed": "player.Platform.VectorX*1.5"
+					}
 				}
 			],
 			"sid": 856755880311154
@@ -75,14 +84,22 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 820598524705191
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 615127822983308,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
 				},
 				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 553441413287301
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 574377618625546,
+					"parameters": {
+						"instance-variable": "dead",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 819001504920265
@@ -363,16 +380,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-angle",
-					"objectClass": "player",
-					"sid": 406805516397115,
-					"parameters": {
-						"angle": "0"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 272213810955089
 		},
 		{
@@ -435,6 +443,15 @@
 					"objectClass": "player",
 					"sid": 669375641634087,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 511247019226759,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [

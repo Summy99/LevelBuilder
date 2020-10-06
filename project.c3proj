@@ -85,7 +85,8 @@
 			"holders",
 			"basicPlatformUI",
 			"basicPlatformCount",
-			"circlePlatform"
+			"circlePlatform",
+			"BG"
 		],
 		"subfolders": []
 	},

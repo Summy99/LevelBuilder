@@ -1,0 +1,37 @@
+{
+	"name": "BG",
+	"plugin-id": "Sprite",
+	"sid": 383957764228803,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2160,
+						"height": 1620,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Background.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6235232,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 144638224181213,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

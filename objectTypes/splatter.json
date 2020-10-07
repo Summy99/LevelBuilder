@@ -1,0 +1,153 @@
+{
+	"name": "splatter",
+	"plugin-id": "Sprite",
+	"sid": 947017414622456,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 700,
+						"height": 650,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\Untitled-Artwork (1).png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2606550,
+						"collisionPoly": {
+							"points": [
+								0.375,
+								0.3038461538461538,
+								0.5,
+								0.23,
+								0.6764285714285714,
+								0.2469230769230769,
+								0.795,
+								0.5,
+								0.6535714285714286,
+								0.7269230769230769,
+								0.5,
+								0.8115384615384615,
+								0.3892857142857143,
+								0.6792307692307692,
+								0.26357142857142857,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 700,
+						"height": 650,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\Untitled-Artwork (2).png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6979191,
+						"collisionPoly": {
+							"points": [
+								0.39571428571428574,
+								0.4269230769230769,
+								0.5,
+								0.21153846153846154,
+								0.6714285714285714,
+								0.35307692307692307,
+								0.7828571428571428,
+								0.5,
+								0.7271428571428571,
+								0.7053846153846154,
+								0.5,
+								0.8715384615384615,
+								0.021428571428571422,
+								0.9746153846153847,
+								0.07285714285714286,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 700,
+						"height": 650,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\Untitled-Artwork 1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6536784,
+						"collisionPoly": {
+							"points": [
+								0.29,
+								0.27615384615384614,
+								0.5,
+								0.36230769230769233,
+								0.5885714285714286,
+								0.4053846153846154,
+								0.6471428571428571,
+								0.5,
+								0.66,
+								0.67,
+								0.5,
+								0.7515384615384615,
+								0.21428571428571427,
+								0.8038461538461539,
+								0.15571428571428572,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 700,
+						"height": 650,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\Untitled-Artwork 2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1626209,
+						"collisionPoly": {
+							"points": [
+								0.24,
+								0.25153846153846154,
+								0.5,
+								0.13461538461538464,
+								0.7114285714285715,
+								0.30230769230769233,
+								0.7342857142857143,
+								0.5,
+								0.6814285714285714,
+								0.6638461538461539,
+								0.5,
+								0.7361538461538462,
+								0.2571428571428571,
+								0.7284615384615385,
+								0.19857142857142857,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 422446951291668,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

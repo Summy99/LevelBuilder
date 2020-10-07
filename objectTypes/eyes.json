@@ -1,0 +1,49 @@
+{
+	"name": "eyes",
+	"plugin-id": "Sprite",
+	"sid": 260346161029325,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 480,
+						"height": 388,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Default-Eyes.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2084982,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 340,
+						"height": 335,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\assets\\Blink-Eyes.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9809532,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 957651350187772,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

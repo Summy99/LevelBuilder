@@ -111,7 +111,12 @@
 			"basicPlatformCount",
 			"circlePlatform",
 			"BG",
-			"face"
+			"face",
+			"splatter",
+			"TitleScreen",
+			"eyes",
+			"win",
+			"restartButton"
 		],
 		"subfolders": []
 	},
@@ -123,13 +128,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Game",
+			"Title",
+			"Win"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"eGame",
+			"eTitle",
+			"eWin"
 		],
 		"subfolders": []
 	},
@@ -286,7 +295,7 @@
 		"enhancedAccelerationPrecision": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 1280,
-	"viewportHeight": 480,
+	"viewportWidth": 2160,
+	"viewportHeight": 1620,
 	"firstLayout": null
 }

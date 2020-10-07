@@ -1,0 +1,108 @@
+{
+	"name": "eWin",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 734290051220880,
+					"parameters": {
+						"object": "restartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "restartButton",
+					"sid": 429834682952776,
+					"parameters": {
+						"opacity": "25"
+					}
+				}
+			],
+			"sid": 682559164029663
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 963008520221694,
+					"parameters": {
+						"object": "restartButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "restartButton",
+					"sid": 143512914847289,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 215805420008976
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 335825941190591,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "restartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 639067540985016,
+					"parameters": {
+						"layout": "Title"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 304266530877841
+				}
+			],
+			"sid": 760680961093952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 187369215091151
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 236201301052512,
+					"parameters": {
+						"width": "2160",
+						"height": "1620"
+					}
+				}
+			],
+			"sid": 657891147658327
+		}
+	],
+	"sid": 633238865074406
+}

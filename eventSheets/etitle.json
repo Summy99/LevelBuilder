@@ -1,0 +1,115 @@
+{
+	"name": "eTitle",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 166068135102867,
+					"parameters": {
+						"interval-seconds": "random(7)"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "eyes",
+					"sid": 161366470908420,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "eyes",
+					"sid": 552859208947568,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 661630645718362
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "eyes",
+					"sid": 811666421395357,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 554201769058264,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "eyes",
+					"sid": 265577720795402,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 549373219304601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 902870716342091
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 625047922748808,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 341452377192608
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 365009843363537
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 994042920446107,
+					"parameters": {
+						"width": "2618",
+						"height": "1943"
+					}
+				}
+			],
+			"sid": 810932631110943
+		}
+	],
+	"sid": 481053831765712
+}

@@ -1,0 +1,741 @@
+{
+	"name": "eGame",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Mode",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0=build;1=play",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 508712453571079
+		},
+		{
+			"eventType": "variable",
+			"name": "SelectedBlock",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0=none;1=basic platform",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 420274153399075
+		},
+		{
+			"eventType": "variable",
+			"name": "BasicPlatforms",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 460714418150082
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 210662351456671
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "face",
+					"sid": 793470846368225,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "player",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "face",
+					"sid": 550605778161271
+				},
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 653183161848710,
+					"parameters": {
+						"width": "1280",
+						"height": "960"
+					}
+				}
+			],
+			"sid": 978257341376132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 727908749306402
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "basicPlatformCursor",
+					"sid": 710681097360678,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "basicPlatformCount",
+					"sid": 365176642493903,
+					"parameters": {
+						"text": "\"x\"&BasicPlatforms"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "player",
+					"sid": 717444795285426,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"speed": "player.Platform.VectorX*1.5"
+					}
+				}
+			],
+			"sid": 856755880311154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 870183961283130,
+					"parameters": {
+						"object": "deathbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 615127822983308,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 574377618625546,
+					"parameters": {
+						"instance-variable": "dead",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 310122544505641,
+					"parameters": {
+						"animation": "\"dead\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 869882051225386,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 227069861916630
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 308773342960414
+				}
+			],
+			"sid": 819001504920265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 458990846319258,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 701187300771769,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 798980580495298
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 252377822149914,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 321001732672107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 575589602493605,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 171046767809587
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 434456037438501,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 324125258509067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 394704659538486,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 245403886611754
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 484599405173361,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 178174618120668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 559428370923757,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 408251957417829,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 858399916054924
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 853217285395284,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 685235127162428,
+					"parameters": {
+						"variable": "SelectedBlock",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 633475780337951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 858574704677824,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 734335256763417,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 700833166134251,
+							"parameters": {
+								"variable": "Mode",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 273263584939995,
+							"parameters": {
+								"variable": "SelectedBlock",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 441851083944118,
+							"parameters": {
+								"variable": "BasicPlatforms",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 615041427276665,
+							"parameters": {
+								"object-to-create": "basicPlatform",
+								"layer": "\"main\"",
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 971533207800899,
+							"parameters": {
+								"variable": "BasicPlatforms",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 654180058717232
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "player",
+					"sid": 244350736842611,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 482735029948110,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 139712538413229,
+					"parameters": {
+						"audio-file": "Jump-SoundBible.com-1007297584",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 391478411038142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 862829062767813,
+					"parameters": {
+						"object": "Ends"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 272213810955089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 723607547277331,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 659878975895127,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 139706376383179,
+					"parameters": {
+						"variable": "Mode",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "basicPlatform",
+					"sid": 408010071189623,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 806275821518758,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 107883004486457,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "face",
+					"sid": 636725908842171,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 106930179895288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "player",
+					"sid": 669375641634087,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 511247019226759,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 411847417681959,
+					"parameters": {
+						"audio-file": "zapsplat_foley_rock_small_hard_impact_on_soil_thud_002_408502",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 576102249152345,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 501355600540644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 794655341115692,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 458477114004463,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 673650026683269,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 429042245740388,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 699017558219533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 822631139565766,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 854778655913065,
+					"parameters": {
+						"instance-variable": "dead"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 731122234168265,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 305437808677858,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 956030546010643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "player",
+					"sid": 993465990683722,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 452252768379136,
+					"parameters": {
+						"animation": "\"happy\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 817201470686939
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "player",
+					"sid": 857290995682347,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 293143429885430,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "player",
+					"sid": 463422610863958,
+					"parameters": {
+						"object": "splatter",
+						"layer": "0",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "splatter",
+					"sid": 623295493792330,
+					"parameters": {
+						"angle": "random(360)"
+					}
+				}
+			],
+			"sid": 959252607334667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "splatter",
+					"sid": 353148714988278
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "splatter",
+					"sid": 241851436778436
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "splatter",
+					"sid": 910627901894381,
+					"parameters": {
+						"frame-number": "random(4)"
+					}
+				}
+			],
+			"sid": 769761251227593
+		}
+	],
+	"sid": 985267035999880
+}

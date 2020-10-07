@@ -1,0 +1,57 @@
+{
+	"name": "win",
+	"plugin-id": "Sprite",
+	"sid": 703120261742733,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2160,
+						"height": 1620,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\Untitled-Artwork 3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8755949,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.999537037037037,
+								0,
+								0.999537037037037,
+								0.5,
+								0.999537037037037,
+								0.9993827160493827,
+								0.5,
+								0.9993827160493827,
+								0,
+								0.9993827160493827,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 426869325479940,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

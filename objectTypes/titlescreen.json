@@ -1,0 +1,57 @@
+{
+	"name": "TitleScreen",
+	"plugin-id": "Sprite",
+	"sid": 467100568047442,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2618,
+						"height": 1943,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "E:\\Work\\MysteriousRabbit\\LevelBuilder\\Untitled-Artwork.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6132346,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9996180290297937,
+								0,
+								0.9996180290297937,
+								0.5,
+								0.9996180290297937,
+								0.9994853319608852,
+								0.5,
+								0.9994853319608852,
+								0,
+								0.9994853319608852,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 353283494242416,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

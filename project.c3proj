@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 21800,
-	"name": "BuildingPrototype",
+	"name": "Experiment B",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -316,5 +316,5 @@
 	},
 	"viewportWidth": 2160,
 	"viewportHeight": 1620,
-	"firstLayout": null
+	"firstLayout": "Title"
 }

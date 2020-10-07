@@ -228,15 +228,6 @@
 					}
 				},
 				{
-					"id": "set-position",
-					"objectClass": "basicPlatform",
-					"sid": 521427629949079,
-					"parameters": {
-						"x": "basicPlatform.originalPositionX",
-						"y": "basicPlatform.originalPositionY"
-					}
-				},
-				{
 					"id": "set-angle",
 					"objectClass": "basicPlatform",
 					"sid": 257065609751400,
@@ -252,6 +243,15 @@
 					"parameters": {
 						"x-component": "0",
 						"y-component": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "basicPlatform",
+					"sid": 349334904097930,
+					"parameters": {
+						"x": "basicPlatform.originalPositionX",
+						"y": "basicPlatform.originalPositionY"
 					}
 				},
 				{
@@ -689,15 +689,6 @@
 							}
 						},
 						{
-							"id": "set-position",
-							"objectClass": "basicPlatform",
-							"sid": 511161764950238,
-							"parameters": {
-								"x": "basicPlatform.originalPositionX",
-								"y": "basicPlatform.originalPositionY"
-							}
-						},
-						{
 							"id": "set-angle",
 							"objectClass": "basicPlatform",
 							"sid": 997668196095724,
@@ -713,6 +704,15 @@
 							"parameters": {
 								"x-component": "0",
 								"y-component": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "basicPlatform",
+							"sid": 178319244979652,
+							"parameters": {
+								"x": "basicPlatform.originalPositionX",
+								"y": "basicPlatform.originalPositionY"
 							}
 						},
 						{

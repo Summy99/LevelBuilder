@@ -153,6 +153,17 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 414198102452599,
+					"parameters": {
+						"audio-file": "smartsound_WEAPONS_BULLET_Small_Impact_Body_02",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 869882051225386,

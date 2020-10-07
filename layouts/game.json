@@ -225,7 +225,10 @@
 						"live-preview": false
 					},
 					"uid": 6,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"originalPositionX": 0,
+						"originalPositionY": 0
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {

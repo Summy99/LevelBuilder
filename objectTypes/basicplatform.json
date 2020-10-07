@@ -3,7 +3,20 @@
 	"plugin-id": "Sprite",
 	"sid": 107174894250965,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "originalPositionX",
+			"type": "number",
+			"desc": "",
+			"sid": 184898963569125
+		},
+		{
+			"name": "originalPositionY",
+			"type": "number",
+			"desc": "",
+			"sid": 759642080456821
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",

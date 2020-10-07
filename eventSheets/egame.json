@@ -170,9 +170,49 @@
 					}
 				},
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 308773342960414
+					"id": "set-position",
+					"objectClass": "player",
+					"sid": 372639281750318,
+					"parameters": {
+						"x": "47",
+						"y": "286"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "circlePlatform",
+					"sid": 888050352468796,
+					"parameters": {
+						"x": "447",
+						"y": "43"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "face",
+					"sid": 897826777196153,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 792437123702104,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "basicPlatform",
+					"sid": 322434484983273,
+					"parameters": {
+						"x": "basicPlatform.originalPositionX",
+						"y": "basicPlatform.originalPositionY"
+					}
 				}
 			],
 			"sid": 819001504920265
@@ -198,6 +238,16 @@
 						"variable": "SelectedBlock",
 						"comparison": 0,
 						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 195718820457776,
+					"parameters": {
+						"variable": "BasicPlatforms",
+						"comparison": 4,
+						"value": "0"
 					}
 				},
 				{
@@ -279,6 +329,37 @@
 				}
 			],
 			"sid": 178174618120668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 180862185542692,
+					"parameters": {
+						"variable": "BasicPlatforms",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 600674032487209
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "basicPlatformCursor",
+					"sid": 526770359458633,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 473803770393491
 		},
 		{
 			"eventType": "block",
@@ -841,6 +922,79 @@
 				}
 			],
 			"sid": 136105512010429
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "basicPlatform",
+					"sid": 418187772466485
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "basicPlatform",
+					"sid": 445155650418931,
+					"parameters": {
+						"instance-variable": "originalPositionX",
+						"value": "basicPlatform.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "basicPlatform",
+					"sid": 606157161908879,
+					"parameters": {
+						"instance-variable": "originalPositionY",
+						"value": "basicPlatform.Y"
+					}
+				}
+			],
+			"sid": 977286461488408
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 767565545450633,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked",
+						"object-clicked": "basicPlatform"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 508547577529049,
+					"parameters": {
+						"variable": "Mode",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "basicPlatform",
+					"sid": 917834023851076
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 888900271342401,
+					"parameters": {
+						"variable": "BasicPlatforms",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 327834636253334
 		}
 	],
 	"sid": 985267035999880

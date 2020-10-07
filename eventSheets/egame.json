@@ -64,10 +64,10 @@
 				{
 					"id": "set-canvas-size",
 					"objectClass": "System",
-					"sid": 653183161848710,
+					"sid": 240770295806753,
 					"parameters": {
 						"width": "1280",
-						"height": "960"
+						"height": "480"
 					}
 				}
 			],
@@ -735,6 +735,35 @@
 				}
 			],
 			"sid": 769761251227593
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 297355955192578,
+					"parameters": {
+						"object": "winTransition"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "splatter",
+					"sid": 103426000102469
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 266813201445383,
+					"parameters": {
+						"layout": "Win"
+					}
+				}
+			],
+			"sid": 136105512010429
 		}
 	],
 	"sid": 985267035999880

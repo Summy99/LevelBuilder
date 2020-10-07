@@ -150,6 +150,17 @@
 						"animation": "\"dead\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 719880652622111,
+					"parameters": {
+						"audio-file": "smartsound_WEAPONS_BULLET_Small_Impact_Body_02",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 819001504920265

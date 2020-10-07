@@ -106,9 +106,39 @@
 						"width": "2618",
 						"height": "1943"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 796685717382381,
+					"parameters": {
+						"audio-file": "2018-05-19_-_Video_Game_Adventure_-_David_Fesliyan",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"Music\""
+					}
 				}
 			],
-			"sid": 810932631110943
+			"sid": 810932631110943,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 765438012253713,
+							"parameters": {
+								"tag": "\"Music\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 581834269713170,
+					"disabled": true
+				}
+			]
 		}
 	],
 	"sid": 481053831765712

@@ -150,17 +150,6 @@
 						"animation": "\"dead\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 719880652622111,
-					"parameters": {
-						"audio-file": "smartsound_WEAPONS_BULLET_Small_Impact_Body_02",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
 				}
 			],
 			"sid": 819001504920265
@@ -183,6 +172,17 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 322905550306754,
+					"parameters": {
+						"audio-file": "smartsound_WEAPONS_BULLET_Small_Impact_Body_02",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "wait",
 					"objectClass": "System",
@@ -242,6 +242,16 @@
 					"sid": 257065609751400,
 					"parameters": {
 						"angle": "0"
+					}
+				},
+				{
+					"id": "set-velocity",
+					"objectClass": "basicPlatform",
+					"sid": 281194725767444,
+					"behaviorType": "Physics",
+					"parameters": {
+						"x-component": "0",
+						"y-component": "0"
 					}
 				},
 				{
@@ -696,6 +706,16 @@
 							}
 						},
 						{
+							"id": "set-velocity",
+							"objectClass": "basicPlatform",
+							"sid": 726057682480270,
+							"behaviorType": "Physics",
+							"parameters": {
+								"x-component": "0",
+								"y-component": "0"
+							}
+						},
+						{
 							"id": "set-mirrored",
 							"objectClass": "player",
 							"sid": 678172490343526,
@@ -745,6 +765,15 @@
 							"behaviorType": "Physics",
 							"parameters": {
 								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "player",
+							"sid": 535799579434248,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "0"
 							}
 						},
 						{

@@ -226,8 +226,8 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
-						"originalPositionX": 0,
-						"originalPositionY": 0
+						"originalPositionX": -262,
+						"originalPositionY": 197
 					},
 					"behaviors": {
 						"Solid": {

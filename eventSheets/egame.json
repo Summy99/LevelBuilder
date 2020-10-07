@@ -69,6 +69,15 @@
 						"width": "1280",
 						"height": "480"
 					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 585132183233626,
+					"parameters": {
+						"layer": "\"build_mode\"",
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 978257341376132
@@ -151,11 +160,32 @@
 						"animation": "\"dead\"",
 						"from": "beginning"
 					}
+				}
+			],
+			"sid": 819001504920265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 605445425298516,
+					"parameters": {
+						"instance-variable": "dead"
+					}
 				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 364900114719152
+				}
+			],
+			"actions": [
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 869882051225386,
+					"sid": 163254588746305,
 					"parameters": {
 						"seconds": "1.0"
 					}
@@ -163,7 +193,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 648019904910664,
+					"sid": 805703264906626,
 					"parameters": {
 						"variable": "BasicPlatforms",
 						"value": "3"
@@ -172,7 +202,7 @@
 				{
 					"id": "set-position",
 					"objectClass": "player",
-					"sid": 372639281750318,
+					"sid": 624795028168981,
 					"parameters": {
 						"x": "47",
 						"y": "286"
@@ -181,7 +211,7 @@
 				{
 					"id": "set-position",
 					"objectClass": "circlePlatform",
-					"sid": 888050352468796,
+					"sid": 218516335140653,
 					"parameters": {
 						"x": "447",
 						"y": "43"
@@ -190,7 +220,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "face",
-					"sid": 897826777196153,
+					"sid": 103184486702932,
 					"parameters": {
 						"animation": "\"default\"",
 						"from": "beginning"
@@ -199,7 +229,7 @@
 				{
 					"id": "set-ignoring-input",
 					"objectClass": "player",
-					"sid": 792437123702104,
+					"sid": 555362107817730,
 					"behaviorType": "Platform",
 					"parameters": {
 						"input": "stop-ignoring"
@@ -208,14 +238,48 @@
 				{
 					"id": "set-position",
 					"objectClass": "basicPlatform",
-					"sid": 322434484983273,
+					"sid": 521427629949079,
 					"parameters": {
 						"x": "basicPlatform.originalPositionX",
 						"y": "basicPlatform.originalPositionY"
 					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 735316231357483,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "face",
+					"sid": 716693330486901,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "player",
+					"sid": 412389771351464,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 446152942572917,
+					"parameters": {
+						"instance-variable": "dead",
+						"value": "false"
+					}
 				}
 			],
-			"sid": 819001504920265
+			"sid": 485630472212630
 		},
 		{
 			"eventType": "block",
@@ -471,6 +535,24 @@
 								"layer": "\"main\"",
 								"x": "Mouse.X",
 								"y": "Mouse.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "basicPlatform",
+							"sid": 893583152818058,
+							"parameters": {
+								"instance-variable": "originalPositionX",
+								"value": "basicPlatform.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "basicPlatform",
+							"sid": 716196766203110,
+							"parameters": {
+								"instance-variable": "originalPositionY",
+								"value": "basicPlatform.Y"
 							}
 						},
 						{
@@ -922,37 +1004,6 @@
 				}
 			],
 			"sid": 136105512010429
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "basicPlatform",
-					"sid": 418187772466485
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "basicPlatform",
-					"sid": 445155650418931,
-					"parameters": {
-						"instance-variable": "originalPositionX",
-						"value": "basicPlatform.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "basicPlatform",
-					"sid": 606157161908879,
-					"parameters": {
-						"instance-variable": "originalPositionY",
-						"value": "basicPlatform.Y"
-					}
-				}
-			],
-			"sid": 977286461488408
 		},
 		{
 			"eventType": "block",

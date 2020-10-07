@@ -161,9 +161,13 @@
 					}
 				},
 				{
-					"id": "reset-global-variables",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 227069861916630
+					"sid": 648019904910664,
+					"parameters": {
+						"variable": "BasicPlatforms",
+						"value": "3"
+					}
 				},
 				{
 					"id": "restart-layout",
@@ -462,65 +466,138 @@
 					"parameters": {
 						"key": 32
 					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 659878975895127,
-					"parameters": {
-						"variable": "Mode",
-						"comparison": 0,
-						"value": "0"
-					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 106930179895288,
+			"children": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 139706376383179,
-					"parameters": {
-						"variable": "Mode",
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 420795078864089,
+							"parameters": {
+								"variable": "Mode",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 571265379634049,
+							"parameters": {
+								"variable": "Mode",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 968685603509566,
+							"parameters": {
+								"layer": "\"build_mode\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "basicPlatform",
+							"sid": 446490427239393,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 492910900789319,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "circlePlatform",
+							"sid": 356096588534448,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 786006373385197,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "face",
+							"sid": 263279213835239,
+							"parameters": {
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 828291155001860
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "basicPlatform",
-					"sid": 408010071189623,
-					"behaviorType": "Physics",
-					"parameters": {
-						"mode": "enabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "player",
-					"sid": 806275821518758,
-					"behaviorType": "Physics",
-					"parameters": {
-						"mode": "enabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "player",
-					"sid": 107883004486457,
-					"behaviorType": "Platform",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "start-animation",
-					"objectClass": "face",
-					"sid": 636725908842171,
-					"parameters": {
-						"from": "beginning"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 247538409439470
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 609780745061455,
+							"parameters": {
+								"variable": "Mode",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 499717667214218,
+							"parameters": {
+								"variable": "Mode",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 328198570801171,
+							"parameters": {
+								"layer": "\"build_mode\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 374103318646318
+						}
+					],
+					"sid": 780490598626700
 				}
-			],
-			"sid": 106930179895288
+			]
 		},
 		{
 			"eventType": "block",

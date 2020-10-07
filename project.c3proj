@@ -117,7 +117,9 @@
 			"eyes",
 			"win",
 			"restartButton",
-			"winTransition"
+			"winTransition",
+			"buildMode",
+			"buildText"
 		],
 		"subfolders": []
 	},
@@ -172,7 +174,13 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "ArchitectsDaughter-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 757565972280838
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
